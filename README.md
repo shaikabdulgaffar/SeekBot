@@ -20,7 +20,7 @@ Seek Bot is a web-based chatbot interface powered by the Deepseek-R1 AI model, r
 ```
 README.md
 app.py
-mode_loader.py
+model_loader.py
 requirements.txt
 static/
     logo.png
@@ -90,7 +90,7 @@ template/
 
 ## Configuration
 
-- **Model and API URL**: You can change the model or Ollama API endpoint in [`mode_loader.py`](mode_loader.py).
+- **Model and API URL**: You can change the model or Ollama API endpoint in [`model_loader.py`](model_loader.py).
 - **Frontend Customization**: Modify styles in [`static/style.css`](static/style.css) and logic in [`static/main.js`](static/main.js).
 
 ---
@@ -98,7 +98,7 @@ template/
 ## File Overview
 
 - [`app.py`](app.py): Flask server, API endpoints, and template rendering.
-- [`mode_loader.py`](mode_loader.py): Sends user prompts to Ollama and returns model responses.
+- [`model_loader.py`](model_loader.py): Sends user prompts to Ollama and returns model responses.
 - [`static/main.js`](static/main.js): Handles chat UI, message sending, theme toggling, and user interactions.
 - [`static/style.css`](static/style.css): All styles for the chat interface.
 - [`template/index.html`](template/index.html): Main HTML structure.

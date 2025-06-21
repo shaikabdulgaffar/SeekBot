@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seek Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Content Area - Full width with centered chat -->
+        <div class="main-content">
+            <div class="chat-container">
+                <!-- Move header here -->
+                <div class="header">
+                    <div class="logo">
+                        <img src="{{ url_for('static', filename='logo.png') }}" alt="Seek Bot Logo" style="height:24px;width:auto;vertical-align:middle;">
+                        <span>Seek Bot</span>
+                    </div>
+                    <div class="header-controls">
+                        <div class="new-chat-btn" id="newChatBtn">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div class="theme-toggle-btn" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-area" id="chatArea">
+                    <div class="initial-state" id="initialState">
+                        <img src="{{ url_for('static', filename='logo.png') }}" alt="Seek Bot Logo" style="height:48px;width:auto;margin-bottom:10px;">
+                        <div class="welcome-message">How can I help you today ?</div>
+                    </div>
+                    <div class="messages-container" id="messagesContainer"></div>
+                </div>
+                <div class="input-separator"></div>
+                <div class="input-area">
+                    <div class="input-container">
+                        <input type="text" id="messageInput" placeholder="How can I help you?" autocomplete="off">
+                        <button class="send-btn" id="sendBtn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="footer-text">
+                        <span class="brand-name">Seek Bot</span> uses Deepseek-R1 AI Model. Check for mistakes.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+</html>

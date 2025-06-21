@@ -2,6 +2,8 @@
 
 Seek Bot is a web-based chatbot interface powered by the Deepseek-R1 AI model, running locally via [Ollama](https://ollama.com/). The project features a modern, responsive frontend and a Flask backend that communicates with the Deepseek model through Ollama's API.
 
+
+![image](https://github.com/user-attachments/assets/b9544b0e-6405-4f6b-8431-7444116ea42f)
 ---
 
 ## Features
@@ -61,7 +63,7 @@ template/
 
 1. **Clone the repository:**
    ```sh
-   git clone <https://github.com/shaikabdulgaffar/SeekBot>
+   git clone https://github.com/shaikabdulgaffar/SeekBot.git
    cd deepseek-chatbot
    ```
 

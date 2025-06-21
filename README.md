@@ -61,7 +61,7 @@ template/
 
 1. **Clone the repository:**
    ```sh
-   git clone <your-repo-url>
+   git clone <https://github.com/shaikabdulgaffar/SeekBot>
    cd deepseek-chatbot
    ```
 
